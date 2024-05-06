@@ -14,7 +14,7 @@ font-family: "Quicksand", sans-serif;
 }
 
 .pages-fondo{
-    width: 1024px;
+    width: 100%;
     height: 60rem;
     background-color: #A9A27C;
 }
@@ -215,25 +215,49 @@ footer a{
 
 @media (max-width: 768px){
     .pages-fondo{
-        width: 769px;
-        height: 1133px;
+        width: 768px;
+        height: 60rem;
         background-color: #A9A27C;
     }
 
     header{
-        padding: 0.20rem 0.1rem;
+        padding: 0.3rem 0.1rem;
     
     }
     
     .navbar{
+        justify-content: start;
         gap: 1.25rem;
+        padding: 1%;
         
+    }
+
+    .section-principal{
+        width: 769px;
+        height: 60rem;
+        background-image: url("../assets/img/fondo.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 790px 135%;
+        font-family: "Quicksand", sans-serif;
+    }
+
+    .section-principal h1{
+        font-family: "Quicksand", sans-serif;
+        display: flex;
+        height: 1000px;
+        width: 500px;
+        align-items: center;
+        color: #ffffff;
+        filter:drop-shadow(0 0 10px #000);
+        padding: 5%;
+        font-size: 200%;
     }
 
     .conteiner-all{
         display: grid;
         justify-content: left;
-        grid-template-columns: 100px 100px 100px;
+        grid-template-columns: 100px 100px ;
         grid-template-rows: 150px 150px 150px 150px;
         text-align: center;
         gap: 20%;
@@ -264,18 +288,60 @@ footer a{
         height: 50%;
     }
     
+    footer{
+        display: flex;
+        background-color: #B6B091;
+        width: 100%;
+        height: 65px;
+        font-family: "Quicksand", sans-serif;
+        justify-content: start;
+    }
+    
+    footer a{
+        text-decoration: none;
+        color: #000;   
+        align-items: center;
+        margin: 2%;
+        margin-top: 1.5%;
+    }
 }
 
 
 @media (max-width:375px){
+
     .pages-fondo{
-        width: 375px;
+        width: 100%;
         height: 60rem;
     }
 
     header{
+        padding: 0.2rem 0.1rem;
+    
+    }
+    
+    .navbar{
+        justify-content: start;
+        gap: 1.25rem;
+        padding: 1%;
+        
+    }
+
+    .section-principal{
+        width: 375px;
+        height: 30rem;
+        background-size: 100% 100%;
+        padding-right: 10%;
+    }
+
+    .section-principal h1{
+        width: 280px;
+        height: 460px;
+        padding: 10%;
+        font-size: 140%;
+    }
+
+    header{
         padding: 0.30rem 0rem 0rem 0rem;
-        background-color: #5B594E;
     
     }
     
@@ -292,7 +358,6 @@ footer a{
         display: flex;
         align-items: center;    
         text-decoration: none;
-        color: #000;
     }
 
     .conteiner-all{
@@ -313,6 +378,4 @@ footer a{
         justify-content: center;
         text-align: center;
     }
-        
-
 }
