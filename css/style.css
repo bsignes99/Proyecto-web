@@ -35,6 +35,11 @@ header{
     
 }
 
+.dim-logo{
+    width: 60px;
+    height: 80px;
+}
+
 .navbar a{
     display: flex;
     align-items: center;    
@@ -186,6 +191,8 @@ main{
 
 }
 
+
+
 footer{
     display: flex;
     background-color: #B6B091;
@@ -203,6 +210,18 @@ footer a{
     margin-top: 1.5%;
 }
 
+.tam-gral{
+    width: 28px;
+}
+
+.tam-ig{
+    width: 25px;
+}
+
+.tam-grupo{
+    height: 100px;
+    width: 200px;
+}
 
 .icon{
     display: flex;
@@ -212,6 +231,7 @@ footer a{
     padding: 2%;
     
 }
+
 
 @media (max-width: 768px){
     .pages-fondo{
@@ -344,6 +364,7 @@ footer a{
         padding: 0.30rem 0rem 0rem 0rem;
     
     }
+    
     
     .navbar{
         display: flex;
